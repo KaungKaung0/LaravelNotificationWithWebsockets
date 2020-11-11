@@ -18,5 +18,5 @@ Broadcast::channel('App.Models.User.{id}', function ($user, $id) {
     return (int) $user->id === (int) $id;
 });
 Broadcast::channel('status-liked', function($user) {
-    return $user->email === "admin@admin.com";
+    return $user->email === "admin@gmail.com";
 });
